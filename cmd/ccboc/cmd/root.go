@@ -29,7 +29,7 @@ var (
 
 	loginCmd = &cobra.Command{
 		Use:              "login",
-		Short:            "Login to api server using the provided url and token. Also it generates the configuration file (default path is $HOME/.config/ccbo/config)",
+		Short:            "Login to api server using the provided url and token. Also it generates the configuration file (default path is $HOME/.config/ccboc/config)",
 		TraverseChildren: true,
 		Run: func(cmd *cobra.Command, args []string) {
 			err := login()
